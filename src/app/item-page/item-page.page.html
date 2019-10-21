@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ itemId }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+  <ion-card>
+    <ion-card-content>
+      <img src="/assets/{{ itemId }}.jpg" alt="Image Unavailable"/>
+      <ion-button (click)="playAudio()">Play Sound</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

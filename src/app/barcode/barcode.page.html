@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Scan Barcode</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+  <ion-card text-center padding>
+    <ion-button expand="block" icon-left (click)="scanCode()"><ion-icon name="qr-scanner"></ion-icon>Scan Barcode</ion-button>
+  </ion-card>
+</ion-content>

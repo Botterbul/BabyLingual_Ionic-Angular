@@ -12,9 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+    path: 'item-page/:itemId',
+    loadChildren: './item-page/item-page.module#ItemPagePageModule'
+  },
+  { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' }
 ];
 
 @NgModule({

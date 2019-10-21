@@ -8,14 +8,18 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title}}
-              </ion-label>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/home" lines="none">
+              <ion-icon slot="start" name="home"></ion-icon>
+              <ion-label>Home</ion-label>
             </ion-item>
           </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+              <ion-item routerLink="/barcode" lines="none">
+                <ion-icon slot="start" name="qr-scanner"></ion-icon>
+                <ion-label>Scan Barcode</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>
