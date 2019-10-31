@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "Translator",
+  "appId": "com.mariusludick.BabyLingual",
+  "appName": "BabyLingual",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www"
